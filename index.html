@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in html</title>
+    <style>
+        .container
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 350px;
+            height: 650px;
+            width: 800px;
+            margin-top: 50px;
+            background-color: beige;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            display: inline-block;
+            border-radius: 10px;  
+        }
+
+        .top
+        {
+           height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .name
+        {
+           margin-left: 320px;
+        }
+
+        .email
+        {
+          margin-left: 320px;
+            
+        }
+
+        .scale
+        {
+          margin-left: 70px;
+        }
+
+        .where
+        {
+          margin-left: 180px;
+            
+        }
+
+        .time
+        {
+          margin-left: 95px;     
+        }
+
+        .emotions
+        {
+          margin-left: 80px;
+        }
+
+        .positive
+        {
+          margin-left: 40px;
+        }
+
+        .apply
+        {
+          margin-left: 100px;
+        }
+
+        .btn
+        {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         
+        }
+
+
+
+    </style>
+  </head>
+  <body style="background-color: rgb(174, 241, 227)">
+    <div class="container">
+      <form class="" action="">
+        <div class="top">
+          Tell us something positive that happened to you today.
+        </div>
+
+        <br>
+
+        <div class="name">  Name &nbsp;<input type="text" /></div>
+
+        <br />
+
+        <div class="email"> Email  &nbsp;<input type="text" /></div>
+
+        <br />
+
+        <div class="scale">On a scale of 1-10, how good was it? &nbsp;<input type="text" /></div>
+
+        <br />
+
+        <div class="where"> 
+        <label for="place"> Where did it happened?</label>
+        <select name="" id="places">
+            <option value="At home"> At home</option>
+            <option value="at home"> At office</option>
+            <option value="at home"> At park</option>
+            <option value="at home"> At restaurant</option>
+        </select>
+        </div>
+
+        <br />
+
+        <div class="time">At what time of day did it happen?
+        <input type="radio" name="morning" value="morning">   Morning<br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="afternoon" value="afternoon">  Afternoon<br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="evening" value="evening"> Evening
+        </div>
+
+        <br />
+
+        <div class="emotions">
+          What emotions did you experince? &nbsp; 
+  
+          <input type="checkbox" name="state1" value="Excited">Excited<br> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+          <input type="checkbox" name="state2" value="Humbled">Humbled<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+          <input type="checkbox" name="state3" value="Elated">Elated<br>  
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="state4" value="Loved">Loved<br>  
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          <input type="checkbox" name="state5" value="Enthusiastic">Enthusiastic<br><br> 
+         
+       
+        </div>
+       
+        <div class="positive">
+          Please describe your positive experience &nbsp; <textarea id="txtid" name="txtname" rows="1" cols="20" maxlength="200"></textarea>
+        </div>
+
+        <br>
+        <br>
+        <div class="btn"> 
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
